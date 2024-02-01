@@ -1,0 +1,1 @@
+docker push blezz/my-gitea-runner
