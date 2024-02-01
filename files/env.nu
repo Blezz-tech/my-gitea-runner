@@ -2,7 +2,7 @@
 #
 # version = "0.89.0"
 
-
+$env.PROMPT_COMMAND_RIGHT = ""
 
 # For more information on defining custom themes, see
 # https://www.nushell.sh/book/coloring_and_theming.html
