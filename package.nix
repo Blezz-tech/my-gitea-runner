@@ -2,15 +2,19 @@
 }:
 
 pkgs.dockerTools.buildImage {
-  name = "test";
+  name = "gitea.blezz-tech.ru/blezz-tech/actions";
   tag = "latest";
   created = "now";
-  copyToRoot = with pkgs.dockerTools; [
-    usrBinEnv
-    binSh
-    caCertificates
-    fakeNss
-  ];
+  copyToRoot = pkgs.buildEnv {
+    name = "image-root";
+    paths = with pkgs; [
+      bash
+      coreutils-full
+      nushell
+      pandoc
+    ];
+    pathsToLink = [ "/bin" ];
+  };
 
-  config.Cmd = [ "/bin/sh" ];
+  config.Cmd = [ "/bin/bash" ];
 }
