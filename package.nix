@@ -12,6 +12,8 @@ pkgs.dockerTools.buildImage {
       coreutils-full
       nushell
       pandoc
+      nodejs
+      git
     ];
     pathsToLink = [ "/bin" ];
   };
