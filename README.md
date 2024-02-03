@@ -17,8 +17,7 @@ docker run -it gitea.blezz-tech.ru/blezz-tech/actions bash
 ## build with nix
 
 ```bash
-docker load < $(nix build .#app) && docker 
-run -it gitea.blezz-tech.ru/blezz-tech/actions bash
+nix build .#app && docker load < result && docker run -it gitea.blezz-tech.ru/blezz-tech/actions bash
 ```
 
 
