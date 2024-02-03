@@ -9,14 +9,15 @@ pkgs.dockerTools.buildImage {
     name = "image-root";
     paths = with pkgs; [
       bash
+      zsh
       coreutils-full
       nushell
       pandoc
-      nodejs
+      nodejs_20
       git
     ];
     pathsToLink = [ "/bin" ];
   };
 
-  config.Cmd = [ "/bin/bash" ];
+  config.Cmd = [ "/bin/zsh" ];
 }

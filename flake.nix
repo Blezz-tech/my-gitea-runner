@@ -18,15 +18,18 @@
           name = "image-root";
           paths = with pkgs; [
             bash
+            zsh
             coreutils-full
             nushell
             pandoc
+            nodejs_20
+            git
             vim
           ];
           pathsToLink = [ "/bin" ];
         };
 
-        config.Cmd = [ "/bin/bash" ];
+        config.Cmd = [ "/bin/zsh" ];
       };
     };
 }
