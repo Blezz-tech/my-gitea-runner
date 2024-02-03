@@ -1,1 +1,0 @@
-docker build -t blezz/my-gitea-runner .
