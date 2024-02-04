@@ -17,20 +17,7 @@
         copyToRoot = pkgs.buildEnv {
           name = "image-root";
           paths = with pkgs; [
-            bash
-            zsh
-            coreutils-full
-            nushell
-            pandoc
-            nodejs_20
-            git
-            vim
-            openssh
-            openssl
-            python3
-            perl
-            gnupg
-            cacert
+            bash zsh coreutils-full nushell pandoc nodejs_20 git vim openssh openssl python3 perl gnupg cacert
           ] ++ [
             pkgs.dockerTools.caCertificates
           ];
