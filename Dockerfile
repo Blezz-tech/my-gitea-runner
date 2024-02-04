@@ -8,4 +8,4 @@ RUN mkdir -p ~/.config/nix/
 
 RUN echo "experimental-features = nix-command" > ~/.config/nix/nix.conf
 
-RUN nix-env -f '<nixpkgs>' -iA 'nushell' 'pandoc'
+RUN nix-env -f '<nixpkgs>' -iA 'pandoc'
