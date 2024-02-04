@@ -31,6 +31,8 @@
             perl
             gnupg
             cacert
+          ] ++ [
+            pkgs.dockerTools.caCertificates
           ];
           pathsToLink = [ "/bin" ];
         };
