@@ -25,6 +25,11 @@
             nodejs_20
             git
             vim
+            openssh
+            openssl
+            python3
+            perl
+            gnupg
           ];
           pathsToLink = [ "/bin" ];
         };
