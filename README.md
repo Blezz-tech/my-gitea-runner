@@ -1,6 +1,9 @@
 
 ## build
 
+```bash
+docker build -t gitea.blezz-tech.ru/blezz-tech/actions .
+```
 
 ## push
 
