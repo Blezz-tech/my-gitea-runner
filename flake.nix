@@ -17,8 +17,13 @@
         copyToRoot = pkgs.buildEnv {
           name = "image-root";
           paths = with pkgs; [
-            bash coreutils-full nushell pandoc nodejs_20
-            git vim
+            bash
+            coreutils-full
+            nushell
+            pandoc
+            nodejs_20
+            git
+            vim
           ];
           pathsToLink = [ "/bin" ];
         };
