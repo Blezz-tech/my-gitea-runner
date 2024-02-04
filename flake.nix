@@ -18,7 +18,7 @@
           name = "image-root";
           paths = with pkgs; [
             bash coreutils-full nushell pandoc nodejs_20
-            git vim openssh openssl python3 perl gnupg
+            git vim
           ];
           pathsToLink = [ "/bin" ];
         };
