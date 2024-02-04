@@ -30,6 +30,7 @@
             python3
             perl
             gnupg
+            cacert
           ];
           pathsToLink = [ "/bin" ];
         };
